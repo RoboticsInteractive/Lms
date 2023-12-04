@@ -33,6 +33,8 @@ def is_faculty_authorised(request, code):
     else:
         return False
 
+def landing_page(request):
+    return render(request, 'landing_page.html')
 
 # Custom Login page for both student and faculty
 def std_login(request):
