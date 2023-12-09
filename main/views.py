@@ -73,7 +73,7 @@ def std_login(request):
 
 def std_logout(request):
     request.session.flush()
-    return redirect('std_login')
+    return redirect('landing_page')
 
 
 # Display all courses (student view)
